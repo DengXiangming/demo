@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.standard.Cv000001Mapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.entity.Cv000001">
+        <id column="dic_id" property="dicId" />
+        <result column="dic_source" property="dicSource" />
+        <result column="dic_code" property="dicCode" />
+        <result column="dic_value" property="dicValue" />
+        <result column="dic_comment" property="dicComment" />
+        <result column="dic_category" property="dicCategory" />
+        <result column="dic_gct" property="dicGct" />
+        <result column="dic_gmt" property="dicGmt" />
+        <result column="VERSION_ID" property="versionId" />
+        <result column="VERSION" property="version" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        dic_id, dic_source, dic_code, dic_value, dic_comment, dic_category, dic_gct, dic_gmt, VERSION_ID, VERSION
+    </sql>
+
+</mapper>
